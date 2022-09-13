@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+
+    <title>Macro App</title>
+  </head>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="ahttps://srv.buysellads.com/ads/click/x/GTND42JMCKAI653ICTALYKQNCW7I52QMC67I5Z3JCYBIC53JCY7I6K7KC67DVKJMFTADC5QJC6YIV23ICEYIKK3WHEYIK2QIF6YD4KJECTNCYBZ52Knonymous"
+    ></script>
+    <!-- Top -->
+    <div class="container" id="top">
+      <div class="row" id="topdiv">
+        <div class="col-3 col-md-3">
+          <button
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            id="menu-btn"
+          >
+            =
+          </button>
+          <div class="dropdown-menu">
+            <div>
+              <div>
+                <button type="button" class="btn btn-light" onclick="find()">
+                  Find Our Restuarant
+                </button>
+              </div>
+              <div>
+                <button type="button" class="btn btn-light">
+                  Make a Reservation
+                </button>
+              </div>
+              <div>
+                <button type="button" class="btn btn-light">Delivery</button>
+              </div>
+              <div>
+                <button type="button" class="btn btn-light">To Go</button>
+              </div>
+              <div>
+                <button type="button" class="btn btn-light" onclick="main()">
+                  Menu
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  <div class="col-6 col-md-6">
+          <div class="text-center">
+            <button type="button" class="btn btn-light btn-sm">Location</button>
+          </div>
+        </div>
+        <div class="col-3 col-md-3">
+          <button type="button" class="btn btn-light btn-sm">Hours</button>
+        </div> -->
+      </div>
+    </div>
+    <!-- Header -->
+    <div id="main">
+      <div class="container">
+        <div class="row">
+          <div>
+            <div class="box">
+              <h1>Ezi's Kitchen</h1>
+              <p id="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-outline-light" type="button">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-title-bar">
+        <div class="row">
+          <!-- <h4 class="emphasized menu-title" id="please-select-btn">
+          Please select a dining time above.
+        </h4> -->
+          <div class="col-3 center">
+            <button
+              type="button"
+              class="emphasized menu-btn"
+              onclick="appetizerMenu()"
+            >
+              Appetizers
+            </button>
+          </div>
+          <div class="col-3 center">
+            <button
+              type="button"
+              class="emphasized menu-btn"
+              onclick="breakfastMenu()"
+            >
+              Breakfast
+            </button>
+          </div>
+          <div class="col-3 center">
+            <button
+              type="button"
+              class="emphasized menu-btn"
+              onclick="lunchMenu()"
+            >
+              Lunch
+            </button>
+          </div>
+          <div class="col-3 center">
+            <button
+              type="button"
+              class="emphasized menu-btn"
+              onclick="dinnerMenu()"
+            >
+              Dinner
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- appetizer menu -->
+
+      <div id="appetizer-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h4 class="emphasized menu-title">Appetizers</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/eggroll.jpg" alt="Egg Rolls" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Egg Rolls</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/salad.jpg" alt="Cucumber Salad" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Cucumber Salad</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/nachos.jpg" alt="Nachos" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Nachos</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/hotwings.jpg" alt="Hot Wings" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Hot Wings</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/spinach.jpg" alt="Spinach Artichoke Dip" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Spinach Artichoke Dip</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- breakfast menu -->
+
+      <div id="breakfast-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h4 class="emphasized menu-title">Breakfast</h4>
+              <!--   <p class="emphasized">7:30am - 10:30am</p> -->
+              <!-- possibly remove time above -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/frenchToast.jpg" alt="French Toast" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">French Toast</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/biscuitsAndGravy.jpg" alt="Biscuits and Gravy" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Biscuits and Gravy</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/eggsbenedict.jpg" alt="Eggs Benedict" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Eggs Benedict</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img
+                src=".images/chickenAndWaffles.jpg"
+                alt="chicken and waffles"
+              />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Chicken and Waffles</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/eggsGrits.jpg" alt="Grits w/ Eggs" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Grits w/ Eggs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- lunch menu -->
+
+      <div id="lunch-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h4 class="emphasized menu-title">Lunch</h4>
+              <!-- <p class="emphasized">11:00am - 3:00pm</p> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/tacos.jpg" alt="Tacos" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Tacos</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/poboy.jpg" alt="fish poboy" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Catfish Po' Boy</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/crabCakes.jpg" alt="Crab Cakes" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Crab Cakes</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/shrimpAlfredo.jpg" alt="Shrimp Alfredo" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Shrimp Alfredo</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/artisanPizza.jpg" alt="Artisan Pizza" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Artisan Pizza</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- dinner menu -->
+
+      <div id="dinner-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h4 class="emphasized menu-title">Dinner</h4>
+              <!--   <p class="emphasized">5:00pm - 9:00pm</p> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/lobsterBisque.jpg" alt="Lobster Bique" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Lobster Bique</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img
+                src=".images/scallopsAndRisotto.jpg"
+                alt="scallops and risotto"
+              />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Scallops and Risotto</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/dragonRoll.jpg" alt="Dragon Roll" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Dragon Roll</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img
+                src=".images/salmonMashed.jpg"
+                alt="Salmon and Mashed Potatoes"
+              />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Salmon and Mashed Potatoes</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <img src="images/chickenParmesan.jpg" alt="Chicken Parmesan" />
+            </div>
+            <div class="col-6 col-sm-12">
+              <p id="food">Chicken Parmesan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <a href class="btn">Learn More</a>
+    </div>
+  </body>
+  <!-- ADDITIONAL OPTIONS IN FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3 class="foot">Contact</h3>
+          <h3 class="foot">Careers</h3>
+          <h3 class="foot">Fundraising</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="about">
+        <div class="row">
+          <div class="col">
+            <h5>About</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <p class="about">Our Values</p>
+          </div>
+          <div class="col-7">
+            <p class="about">Health</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <p class="about">Sustainability</p>
+          </div>
+          <div class="col-7">
+            <p class="about">News</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <p class="about">All Locations</p>
+          </div>
+          <div class="col-7">
+            <p class="about">Safety</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <p class="about">Events</p>
+          </div>
+          <div class="col-7">
+            <p class="about"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
