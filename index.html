@@ -20,96 +20,80 @@
     <!-- Top -->
     <div class="container" id="top">
       <div class="row" id="topdiv">
-        <!-- <div class="col-3 col-md-3"> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="top-center">
-            <h4>Ezi's</h4>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Hidden brand</a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+        <div class="col-5">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="">
               <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
+                class="navbar-toggler fixed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
               >
-                Search
+                <span class="navbar-toggler-icon"></span>
               </button>
-            </form>
-          </div>
-        </nav>
-        <!--  <button
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            id="menu-btn"
-          >
-            =
-          </button>
-          <div class="dropdown-menu">
-            <div>
-              <div>
-                <button type="button" class="btn btn-light" onclick="find()">
-                  Find Our Restuarant
-                </button>
-              </div>
-              <div>
-                <button type="button" class="btn btn-light">
-                  Make a Reservation
-                </button>
-              </div>
-              <div>
-                <button type="button" class="btn btn-light">Delivery</button>
-              </div>
-              <div>
-                <button type="button" class="btn btn-light">To Go</button>
-              </div>
-              <div>
-                <button type="button" class="btn btn-light" onclick="main()">
-                  Menu
-                </button>
-              </div>
             </div>
-          </div> -->
-        <!--  </div> -->
-
-        <!--  <div class="col-6 col-md-6">
-          <div class="text-center">
-            <button type="button" class="btn btn-light btn-sm">Location</button>
-          </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <button
+                    type="button"
+                    class="emphasized menu-btn"
+                    onclick="appetizerMenu()"
+                  >
+                    Appetizers
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="emphasized menu-btn"
+                    onclick="breakfastMenu()"
+                  >
+                    Breakfast
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    type="button"
+                    class="emphasized menu-btn"
+                    onclick="lunchMenu()"
+                  >
+                    Lunch
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="emphasized menu-btn"
+                    onclick="dinnerMenu()"
+                  >
+                    Dinner
+                  </button>
+                </li>
+              </ul>
+              <!--   <form class="form-inline my-2 my-lg-0">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-success my-2 my-sm-0"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form> -->
+            </div>
+          </nav>
         </div>
-        <div class="col-3 col-md-3">
-          <button type="button" class="btn btn-light btn-sm">Hours</button>
-        </div> -->
+        <div class="col-4 top-center">
+          <h4 class="emphasized fixed">Ezi's</h4>
+        </div>
       </div>
     </div>
     <!-- Header -->
@@ -118,25 +102,18 @@
         <div class="row">
           <div>
             <div class="box">
-              <h1>Ezi's Kitchen</h1>
+              <!-- <h1>Ezi's Kitchen</h1> -->
               <p id="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
-
-              <!--  <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-outline-light" type="button">
-                  Order Now
-                </button>
-              </div> -->
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Menu Bar List -->
       <div class="menu-title-bar">
         <div class="row">
-          <!-- <h4 class="emphasized menu-title" id="please-select-btn">
-          Please select a dining time above.
-        </h4> -->
           <div class="col-3 center">
             <button
               type="button"
