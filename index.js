@@ -50,3 +50,13 @@ function main() {
   lunch.style.display = 'block';
   breakfast.style.display = 'block';
 }
+
+$(document).ready(function () {
+  $('#btn-nav-previous').click(function () {
+    $('.menu-inner-box').animate({ scrollLeft: '-=100px' });
+  });
+
+  $('#btn-nav-next').click(function () {
+    $('.menu-inner-box').animate({ scrollLeft: '+=100px' });
+  });
+});

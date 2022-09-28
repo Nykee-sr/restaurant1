@@ -20,7 +20,8 @@
     <!-- Top -->
     <div class="container" id="top">
       <div class="row" id="topdiv">
-        <div class="col-5">
+        
+        <!-- <div class="col-5">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="">
               <button
@@ -73,7 +74,7 @@
                     Dinner
                   </button>
                 </li>
-              </ul>
+              </ul> -->
               <!--   <form class="form-inline my-2 my-lg-0">
                 <input
                   class="form-control mr-sm-2"
@@ -113,53 +114,39 @@
 
       <!-- Menu Bar List -->
       <div class="menu-title-bar">
-        <div class="row">
-          <div class="col-3 center">
-            <button
-              type="button"
-              class="emphasized menu-btn"
-              onclick="appetizerMenu()"
-            >
-              Appetizers
-            </button>
+        <nav id="menu-container" class="arrow">
+          <div id="btn-nav-previous">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+              <path d="M0 0h24v24H0z" fill="none" />
+            </svg>
           </div>
-          <div class="col-3 center">
-            <button
-              type="button"
-              class="emphasized menu-btn"
-              onclick="breakfastMenu()"
-            >
-              Breakfast
-            </button>
+          <div id="btn-nav-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+              <path d="M0 0h24v24H0z" fill="none" />
+            </svg>
           </div>
-          <div class="col-3 center">
-            <button
-              type="button"
-              class="emphasized menu-btn"
-              onclick="lunchMenu()"
-            >
-              Lunch
-            </button>
+          <div class="menu-inner-box">
+            <div class="menu">
+              <a class="menu-item emphasized" href="#" onclick="appetizerMenu()">Appetizers
+              <a class="menu-item emphasized" href="#" onclick="breakfastMenu()">Breakfast</a>
+              <a class="menu-item emphasized" href="#" onclick="lunchMenu()">Lunch</a>
+              <a class="menu-item emphasized last-item" href="#" onclick="dinnerMenu()">Dinner</a>
+            </div>
           </div>
-          <div class="col-3 center">
-            <button
-              type="button"
-              class="emphasized menu-btn"
-              onclick="dinnerMenu()"
-            >
-              Dinner
-            </button>
-          </div>
-        </div>
+        </nav>
       </div>
-
+      
       <!-- appetizer menu -->
 
       <div id="appetizer-menu">
         <div class="container">
           <div class="row">
             <div class="col">
-              <h4 class="emphasized menu-title">Appetizers</h4>
+               <h4 class="emphasized menu-title">Appetizers</h4>
             </div>
           </div>
           <div class="row">
@@ -211,11 +198,9 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <h4 class="emphasized menu-title">Breakfast</h4>
-              <!--   <p class="emphasized">7:30am - 10:30am</p> -->
-              <!-- possibly remove time above -->
+               <h4 class="emphasized menu-title">Breakfast</h4>
             </div>
-          </div>
+          </div> 
           <div class="row">
             <div class="col-6 col-sm-12">
               <img src="images/frenchToast.jpg" alt="French Toast" />
@@ -269,9 +254,9 @@
           <div class="row">
             <div class="col">
               <h4 class="emphasized menu-title">Lunch</h4>
-              <!-- <p class="emphasized">11:00am - 3:00pm</p> -->
+
             </div>
-          </div>
+          </div> 
           <div class="row">
             <div class="col-6 col-sm-12">
               <img src="images/tacos.jpg" alt="Tacos" />
@@ -322,7 +307,6 @@
           <div class="row">
             <div class="col">
               <h4 class="emphasized menu-title">Dinner</h4>
-              <!--   <p class="emphasized">5:00pm - 9:00pm</p> -->
             </div>
           </div>
           <div class="row">
@@ -446,4 +430,5 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </html>
