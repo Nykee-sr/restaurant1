@@ -115,11 +115,15 @@ img {
     float: none;
   }
 }
+@media (min-width: 768px) {
+  img {
+    max-width: 300px;
+  }
+}
 #lunch-menu {
   display: none;
 }
 .menu-title {
-  /* border-top-style: solid; */
   border-top-style: none;
   border-right-style: none;
   border-bottom-style: none;
@@ -127,8 +131,6 @@ img {
   max-width: 100%;
   text-align: left;
   margin-left: 1.5em;
-  /*   border-width: thin;
-  border-color: gray; */
 }
 .menu-title-bar {
   padding: 5px;
@@ -150,12 +152,12 @@ img {
   display: block;
 }
 #top {
-  position: fixed;
+  position: absolute;
   background-color: rgb(247, 247, 247);
   border-bottom-style: solid;
   border-width: thin;
   border-color: gray;
-  height: 4em;
+  height: 3em;
   max-width: 100%;
 }
 /*  */
