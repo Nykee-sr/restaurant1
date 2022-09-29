@@ -6,6 +6,7 @@ const appetizer = document.querySelector('#appetizer-menu');
 function appetizerMenu() {
   if ((appetizer.style.display = 'none')) {
     appetizer.style.display = 'block';
+    seeMenu.style.display = 'block';
     lunch.style.display = 'none';
     dinner.style.display = 'none';
     breakfast.style.display = 'none';
@@ -14,6 +15,7 @@ function appetizerMenu() {
 function breakfastMenu() {
   if ((breakfast.style.display = 'none')) {
     breakfast.style.display = 'block';
+    seeMenu.style.display = 'block';
     appetizer.style.display = 'none';
     lunch.style.display = 'none';
     dinner.style.display = 'none';
@@ -22,6 +24,7 @@ function breakfastMenu() {
 function lunchMenu() {
   if ((lunch.style.display = 'none')) {
     lunch.style.display = 'block';
+    seeMenu.style.display = 'block';
     appetizer.style.display = 'none';
     dinner.style.display = 'none';
     breakfast.style.display = 'none';
@@ -30,19 +33,15 @@ function lunchMenu() {
 function dinnerMenu() {
   if ((dinner.style.display = 'none')) {
     dinner.style.display = 'block';
+    seeMenu.style.display = 'block';
     appetizer.style.display = 'none';
     lunch.style.display = 'none';
     breakfast.style.display = 'none';
   }
 }
-/* function myFunction(x) {
-  x.classList.toggle('change');
-} */
+
 const mainpage = document.getElementById('main');
 
-function find() {
-  mainpage.style.display = 'none';
-}
 function main() {
   mainpage.style.display = 'block';
   dinner.style.display = 'block';
@@ -50,13 +49,3 @@ function main() {
   lunch.style.display = 'block';
   breakfast.style.display = 'block';
 }
-
-$(document).ready(function () {
-  $('#btn-nav-previous').click(function () {
-    $('.menu-inner-box').animate({ scrollLeft: '-=100px' });
-  });
-
-  $('#btn-nav-next').click(function () {
-    $('.menu-inner-box').animate({ scrollLeft: '+=100px' });
-  });
-});
