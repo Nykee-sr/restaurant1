@@ -16,6 +16,9 @@ body {
   background-color: rgb(255, 255, 255);
   max-width: 100;
 }
+button {
+  color: black;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -160,9 +163,25 @@ p {
   display: none;
 }
 #slide img {
-  width: 30%;
-  height: 50%;
+  /*   width: 30%;
+  height: 50%; */
+  width: 450px;
+  height: 250px;
+  border-radius: 0px;
+  margin-top: -2em;
 }
+@media (min-width: 576px) {
+  #slide img {
+    width: 600px;
+    height: 400px;
+  }
+}
+/* @media (min-width: 768px) {
+  #slide img {
+    width: 900px;
+    height: 500px;
+  }
+} */
 #top {
   position: absolute;
   background-color: rgb(247, 247, 247);
